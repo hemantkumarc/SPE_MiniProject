@@ -23,7 +23,7 @@ pipeline {
 		stage('Build Code')
 		{
 			steps {
-				sh "javac calculator.java"
+				sh "mvn clean install"
 			}
 		}
 
@@ -31,7 +31,7 @@ pipeline {
 		stage('Test Code')
 		{
 			steps {
-				echo "Testing the code"
+				sh "mvn test"
 			}
 		}
 
