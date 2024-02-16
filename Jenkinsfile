@@ -2,6 +2,11 @@ pipeline {
 
 	agent any 
 	
+	tools { 
+      maven 'MAVEN_HOME' 
+      jdk 'JAVA_HOME' 
+    }
+	
 	environment {
 		DOCKER_IMAGE_NAME = 'calculator'
 		GITHUB_REPO_URL = 'https://github.com/hemantkumarc/SPE-MiniProject.git'
