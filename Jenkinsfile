@@ -2,9 +2,9 @@ pipeline {
 
 	agent any 
 	
-	tools { 
-      maven 'maven_3_9_6'
-    }
+	// tools { 
+    //   maven 'maven_3_9_6'
+    // }
 
 	environment {
 		DOCKER_IMAGE_NAME = 'calculator'
